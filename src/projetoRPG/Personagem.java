@@ -18,23 +18,24 @@ public class Personagem {
 	private Equipamento equipamento;
 	
 	
-	int rolardado(int tipodado) {
+	int rolarDado(int tipodado) {
 		
 		if (tipodado <= 1) {
-			System.out.println("Dado(s) invalidos");
+			System.out.println("Dado invalidos");
 			
 		}else {
 			Random random = new Random ();
-			int dado = random.nextInt(tipodado) + 1;
-			System.out.printf("%d, ",dado);			
+			int resultado = random.nextInt(tipodado) + 1;
+			System.out.printf("%d, ",resultado);	
+			return resultado ;
 		}
 		
 	}
 	
-	int rolarDados(int quantidadeDados, int tipoDado, int bonusDado) {
+	int rolarDadosComBonus(int quantidadeDados, int tipoDado, int bonusDado) {
 		int soma = 0;
 		if (quantidadeDados <= 0 || tipoDado <=0) {
-			System.out.println("Dafo invalido.");
+			System.out.println("Dado invalido.");
 			
 		}else {
 			
@@ -50,11 +51,7 @@ public class Personagem {
 	}
 	
 	int rolarAtributos() {
-		Random rand = new Random();
 		
-		int soma = 0;
-		
-		for (int contador1 = 1;) 
 	}
 
 }
