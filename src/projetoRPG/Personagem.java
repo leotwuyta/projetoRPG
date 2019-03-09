@@ -17,6 +17,20 @@ public class Personagem {
 	private Status status;
 	private Equipamento equipamento;
 	
+	
+	int rolardado(int tipodado) {
+		
+		if (tipodado <= 1) {
+			System.out.println("Dado(s) invalidos");
+			
+		}else {
+			Random random = new Random ();
+			int dado = random.nextInt(tipodado) + 1;
+			System.out.printf("%d, ",dado);			
+		}
+		
+	}
+	
 	int rolarDados(int quantidadeDados, int tipoDado, int bonusDado) {
 		int soma = 0;
 		if (quantidadeDados <= 0 || tipoDado <=0) {
@@ -40,7 +54,7 @@ public class Personagem {
 		
 		int soma = 0;
 		
-		for (int contador1 = 1;)
+		for (int contador1 = 1;) 
 	}
 
 }
