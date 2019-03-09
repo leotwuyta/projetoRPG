@@ -2,7 +2,7 @@ package projetoRPG;
 
 public class Atributo {
 
-	private int valor;
+	private Integer valor;
 	private boolean resistencia;
 	
 	//metodos
