@@ -2,9 +2,9 @@ package projetoRPG;
 
 public class Status {
 	
-	private int hpTotal;
-	private int hpAtual;
-	private int ca;	
-	private int deslocamento;
+	private Integer hpTotal;
+	private Integer hpAtual;
+	private Integer classeArmadura;	
+	private Integer deslocamento;
 	private Atributos atributos;
 }

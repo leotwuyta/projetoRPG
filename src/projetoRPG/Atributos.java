@@ -1,13 +1,15 @@
 package projetoRPG;
 
+import java.util.ArrayList;
+
 public class Atributos {
 
-	private Atributo atributo;
-	private Forca forca;
-	private Destreza destreza;
-	private Constituicao constituicao;
-	private Inteligencia inteligencia;
-	private Sabedoria sabedoria;
-	private Carisma carisma;
+	private Integer forca;
+	private Integer destreza;
+	private Integer constituicao;
+	private Integer inteligencia;
+	private Integer sabedoria;
+	private Integer carisma;
+	private ArrayList<Proeficiencias> proeficiencias;
 	
 }

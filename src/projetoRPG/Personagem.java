@@ -13,7 +13,7 @@ public class Personagem {
 	private String raca ;
 	private String antecedentes ;
 	private String tendencia ;
-	private int experiencia;
+	private Integer experiencia;
 	private Status status;
 	private Equipamento equipamento;
 	
