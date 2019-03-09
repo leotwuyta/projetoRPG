@@ -12,12 +12,12 @@ public class Personagem {
 	private Integer id; 
 	private String nomePersonagem ;
 	private Classe classe ;
-	private String raca ;
-	private String antecedentes ;
+	private Raca raca ;
+	private Antecedente antecedente ;
 	private String tendencia ;
 	private Integer experiencia;
 	private Status status;
-	private Equipamento equipamento;
+	private Inventario inventario;
 		
 	int rolarDado(int tipodado) {
 		int resultado = 0 ;
@@ -53,7 +53,7 @@ public class Personagem {
 		return soma;
 	}
 	
-	ArrayList rolarAtributos() {
+	ArrayList<Integer> rolarAtributos() {
 		
 		ArrayList<Integer> resultadoOrdenado = new ArrayList<Integer>();
 		
