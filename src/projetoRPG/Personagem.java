@@ -33,20 +33,20 @@ public class Personagem {
 		return resultado ;
 	}
 	
-	int rolarDadosComBonus(int quantidadeDados, int tipoDado, int bonusDado) {
+	int rolarDadosComBonus(int quantidadeDados, int tipoDado2, int bonusDado) {
 		
 		int soma = 0;
+		int resultado = 0;
 		
-		if (quantidadeDados <= 0 || tipoDado <=0) {
+		if (quantidadeDados < 1 || tipoDado2 <=1) {
 			System.out.println("Dado invalido.");
 			
 		}else {
 			
-			Random random = new Random();
 			for (int contador = 1; contador <= quantidadeDados; contador++) {
-				int dados = random.nextInt(quantidadeDados) + 1;
-				System.out.printf("%d, ",dados);
-				soma += dados;
+				rolarDado(tipoDado2) ;
+				System.out.printf("%d, ",resultado);
+				soma += resultado;
 			}
 			System.out.println(soma);
 		}
